@@ -1,0 +1,2 @@
+#!/usr/bin/env ruby
+puts "Create a new empty application with: squash <application_name>"

@@ -8,11 +8,8 @@ A test application framework
 
 ## Install
 
-not yet, but eventually:
-
     gem install squash
 
 ## Contribute
 
 * [http://github.com/nusco/squash](http://github.com/nusco/squash)
-
