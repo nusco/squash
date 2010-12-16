@@ -73,6 +73,7 @@ DEPENDENCIES
   akephalos (~> 0.2.4)
   aruba (~> 0.2.7)
   cucumber (~> 0.10.0)
+  rake (~> 0.8.7)
   rspec (~> 2.3.0)
   squash!
   syntax (~> 1.0.0)

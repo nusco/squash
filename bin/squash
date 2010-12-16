@@ -1,2 +1,15 @@
 #!/usr/bin/env ruby
-puts "Create a new empty application with: squash <application_name>"
+
+template_dir = File.expand_path(File.dirname(__FILE__)) + "/../template"
+puts template_dir
+
+if ARGV.size != 1
+  puts "Create a new empty application with: squash <application_name>"
+  exit
+end
+
+app = ARGV[0]
+require 'fileutils'
+FileUtils.mkdir app
+FileUtils.cp_r "#{template_dir}/.", app
+puts "Created Squash application: #{app}"
