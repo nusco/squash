@@ -4,24 +4,32 @@ A test application framework
 
 ## Description
 
-I spent a huge amount of time building testing stacks in Ruby. There are just too many options. Squash tries to fix that problem by generating a Cucumber-powered, Bundler-enabled web test application that is fully wired with the current state-of-the-art stack, from Cucumber down to Capybara, RSpec and Akephalos.
+I spent a huge amount of time building Cucumber-based stacks to test my web applications. There are so many options, and sometimes they don't really get together. Should I use Cucumber/RSpec/Webrat/Mechanize, Cucumber/RSpec/Capybara/Selenium, Cucumber/Watir, or what else? How do I solve all the version conflicts that seem to spring out of nowhere when I put these libraries together? How do I wire up all the pieces in a stand-alone, non-Rails application?
 
-## Install
+Squash tries to save some time by generating a Cucumber-powered, Bundler-enabled web test application that is fully wired with the current popular favorite mix of gems: Cucumber, RSpec, Capybara and Akephalos.
+
+## Current status
+
+Experimental. This is just something that I'm trying out now for my own projects. At the moment, it should (might?) just give you an empty application with a working stack right now.
+
+## Install Squash
 
     sudo gem install squash
 
-## Install
+## Generate a Squash application
 
     squash <application_name>
 
-Then, from the application directory:
+Move to the application directory and install the entire stack of gems:
 
     bundle install
-    
-Now check that the full stack is working:
+
+Now check that the thing is working:
 
     bundle exec cucumber
 
-## Contribute
+Time to write your own features!
+
+## Contribute to Squash
 
 * [http://github.com/nusco/squash](http://github.com/nusco/squash)
