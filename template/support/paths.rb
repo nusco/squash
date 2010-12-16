@@ -2,8 +2,8 @@ module NavigationHelpers
   def path_to(page_name)
     case page_name
 
-    when /the delicious home page/
-      'http://www.delicious.com/'
+    when /RubyGems.org/
+      'http://www.rubygems.org/'
 
   	else
       raise "Can't find mapping from \"#{page_name}\" to a path.\n" +
