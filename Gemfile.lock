@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    squash (0.0.2)
+    squash (0.0.3)
       akephalos
       cucumber
       rspec

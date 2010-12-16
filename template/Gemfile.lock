@@ -50,6 +50,11 @@ GEM
       ffi (~> 0.6.3)
       json_pure
       rubyzip
+    squash (0.0.3)
+      akephalos
+      cucumber
+      rspec
+      syntax
     syntax (1.0.0)
     term-ansicolor (1.0.5)
 
@@ -60,4 +65,5 @@ DEPENDENCIES
   akephalos
   cucumber
   rspec
+  squash
   syntax

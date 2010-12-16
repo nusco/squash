@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.authors = ['Paolo "Nusco" Perrotta']
   s.description = 'A test application framework'
   s.summary = "..."
-#  s.require_paths = "lib"
+  s.require_path = "lib"
   s.email = 'paolo.nusco.perrotta@gmail.com'
   s.homepage = 'https://github.com/nusco/squash'
   s.bindir = 'bin'
