@@ -14,12 +14,9 @@ namespace :gem do
   
   desc "Publish the current version to the world"
   task :publish do
-    system "bundle install"
-    system "cd template"
-    system "bundle install"
-    system "cd .."
-    system "bundle update squash"
-    system "bundle exec cucumber"
+    system "bundle exec cucumber -q"
+    system "gem build squash.gemspec"
     system "gem push squash-#{Squash::VERSION}.gem"
+    File.delete "squash-#{Squash::VERSION}.gem"
   end
 end
