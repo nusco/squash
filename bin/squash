@@ -1,7 +1,6 @@
 #!/usr/bin/env ruby
 
 template_dir = File.expand_path(File.dirname(__FILE__)) + "/../template"
-puts template_dir
 
 if ARGV.size != 1
   puts "Create a new empty application with: squash <application_name>"
