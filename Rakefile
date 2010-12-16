@@ -1,3 +1,6 @@
+require 'rubygems'
+require 'bundler/setup'
+
 namespace :gem do
   desc "Build the Squash gem"
   task :build do
