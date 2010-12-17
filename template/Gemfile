@@ -1,6 +1,6 @@
 source :rubygems
 
-gem 'squash'        , '= 0.0.4'
+gem 'squash'        , '= 0.0.5'
 
 gem 'cucumber'      , '~> 0.10.0'
 gem 'rspec'         , '~> 2.3.0'
