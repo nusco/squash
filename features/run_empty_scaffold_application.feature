@@ -5,8 +5,8 @@ So that I can verify that the entire stack works
 
 Scenario: Run smoke test
 Given I'm in an empty directory
-When I run "squash clickmonkey"
+When I run "bundle exec squash clickmonkey"
 And I cd to "clickmonkey"
 And I run "bundle install"
-And I run "cucumber"
+And I run "bundle exec cucumber"
 Then the output should contain "1 scenario (1 passed)"
