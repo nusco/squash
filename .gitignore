@@ -1,4 +1,3 @@
 squash-*.gem
 **/.DS_Store
-.rvmrc
 template/Gemfile.lock

@@ -8,5 +8,13 @@ Given I'm in an empty directory
 When I run "bundle exec squash clickmonkey"
 And I cd to "clickmonkey"
 And I run "bundle install"
+And I run "bundle exec rake self_test"
+Then the output should contain "1 scenario (1 passed)"
+
+Scenario: Run example
+Given I'm in an empty directory
+When I run "bundle exec squash clickmonkey"
+And I cd to "clickmonkey"
+And I run "bundle install"
 And I run "bundle exec cucumber"
 Then the output should contain "1 scenario (1 passed)"
