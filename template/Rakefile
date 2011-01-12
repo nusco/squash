@@ -1,7 +1,0 @@
-require 'rubygems'
-require 'bundler/setup'
-
-desc "Smoke-test that all the gems are playing nicely together. Use after a 'bundle update'."
-task :self_test do
-  system "bundle exec cucumber -q ./self_test.feature"
-end
