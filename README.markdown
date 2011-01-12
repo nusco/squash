@@ -20,7 +20,7 @@ Experimental. This is just something that I'm trying out now for my own projects
 
 ## Generate a Squash application
 
-    squash <application_name>
+    squash create <application_name>
 
 Move to the application directory and install the entire stack of gems:
 

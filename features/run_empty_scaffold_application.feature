@@ -5,7 +5,7 @@ So that I can verify that the entire stack works
 
 Scenario: Run example
 Given I'm in an empty directory
-When I run "bundle exec squash clickmonkey"
+When I run "bundle exec squash create clickmonkey"
 And I cd to "clickmonkey"
 And I successfully run "bundle check"
 And I run "bundle exec cucumber"

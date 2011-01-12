@@ -2,12 +2,12 @@
 
 template_dir = File.expand_path(File.dirname(__FILE__)) + "/../template"
 
-if ARGV.size != 1
-  puts "Create a new empty application with: squash <application_name>"
+if ARGV.size != 2 || ARGV[0] != 'create'
+  puts "Create a new empty application with: squash create <application_name>"
   exit
 end
 
-app = ARGV[0]
+app = ARGV[1]
 require 'fileutils'
 FileUtils.mkdir app
 FileUtils.cp_r "#{template_dir}/.", app

@@ -5,16 +5,21 @@ So that I can get up and running quick
 
 Scenario: Generate scaffold application
 Given I'm in an empty directory
-When I run "bundle exec squash clickmonkey"
+When I run "bundle exec squash create clickmonkey"
 Then the output should contain "Created Squash application: clickmonkey"
 And a file named "clickmonkey/support/paths.rb" should exist
 
-Scenario: No command-line argument
+Scenario: No argument to "squash"
 Given I'm in an empty directory
 When I run "bundle exec squash"
-Then the output should contain "Create a new empty application with: squash <application_name>"
+Then the output should contain "Create a new empty application with: squash create <application_name>"
 
-Scenario: More than one command-line argument
+Scenario: No argument to "squash create"
 Given I'm in an empty directory
-When I run "bundle exec squash one two"
-Then the output should contain "Create a new empty application with: squash <application_name>"
+When I run "bundle exec squash create"
+Then the output should contain "Create a new empty application with: squash create <application_name>"
+
+Scenario: More than two arguments to "squash create"
+Given I'm in an empty directory
+When I run "bundle exec squash create one two"
+Then the output should contain "Create a new empty application with: squash create <application_name>"

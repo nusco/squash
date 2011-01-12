@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    squash (0.0.6)
+    squash (0.0.7)
       akephalos (= 0.2.4)
       builder (= 3.0.0)
       capybara (= 0.3.9)
