@@ -17,6 +17,9 @@ Gem::Specification.new do |s|
 
   s.rubyforge_project = "nowarning"     # FIXME: any way around this?
 
+  # FIXME: how do I make sure that the user has bundler installed w/o getting into a deps loop?
+  #s.add_dependency  'bundler'
+  
   s.add_dependency  'akephalos', '0.2.4'
   s.add_dependency  'builder', '3.0.0'
   s.add_dependency  'capybara', '0.3.9'

@@ -9,6 +9,11 @@ When I run "bundle exec squash create clickmonkey"
 Then the output should contain "Created Squash application: clickmonkey"
 And a file named "clickmonkey/support/paths.rb" should exist
 
+Scenario: Generate local Gemfile.lock
+Given I'm in an empty directory
+When I run "bundle exec squash create clickmonkey"
+Then a file named "clickmonkey/Gemfile.lock" should exist
+
 Scenario: No argument to "squash"
 Given I'm in an empty directory
 When I run "bundle exec squash"
