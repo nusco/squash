@@ -19,7 +19,6 @@ Experimental. This is just something that I'm trying out now for my own projects
     gem install squash
     squash create my_app
     cd my_app
-    bundle install
     bundle exec cucumber
 
 Time to write your own features!
