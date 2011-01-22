@@ -1,1 +1,2 @@
-default: --require step_definitions --require support
+# FIXME: add examples
+default: --quiet

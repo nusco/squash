@@ -49,6 +49,8 @@ Gem::Specification.new do |s|
   s.rubyforge_project = "nowarning" # FIXME: any way around this?
 
   s.add_development_dependency 'aruba', '0.3.2'
+  s.add_development_dependency 'wirble'
+  s.add_development_dependency 'awesome_print'
 
 #  s.test_files = `git ls-files -- {spec,features}/*`.split("\n")
   s.executables = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }

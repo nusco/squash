@@ -8,8 +8,6 @@ end
 app = ARGV[1]
 template_dir = File.expand_path(File.dirname(__FILE__)) + "/../template"
 
-ENV['BUNDLE_GEMFILE'] = "./#{app}/Gemfile"
-
 require 'rubygems'
 require 'bundler/setup'
 
@@ -19,5 +17,6 @@ FileUtils.cp_r "#{template_dir}/.", app
 puts "Created Squash application: #{app}"
 
 require 'bundler'
-#Bundler.install
+require 'bundler/cli'
+ENV['BUNDLE_GEMFILE'] = "./#{app}/Gemfile"
 Bundler::Installer.install(app, Bundler::Definition.build("#{app}/Gemfile", "Gemfile.lock", true))
