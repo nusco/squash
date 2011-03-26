@@ -1,5 +1,5 @@
 require 'akephalos'
-require 'capybara/dsl'
+require 'capybara/cucumber'
 
 Capybara.default_driver = :akephalos
 Capybara.run_server = false
