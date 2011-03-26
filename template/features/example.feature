@@ -3,7 +3,6 @@ As a developer
 I want an example Squash feature
 So that I can see what it looks like
 
-@javascript
 Scenario: Go to the web and click around a bit
 Given I am on http://www.rubygems.org
 When I jump up and down with joy
