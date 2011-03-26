@@ -5,21 +5,21 @@ So that I can get up and running quick
 
 Scenario: Generate scaffold application
 Given I'm in an empty directory
-When I run "bundle exec squash create clickmonkey"
+When I run `bundle exec squash create clickmonkey`
 Then the output should contain "Created Squash application: clickmonkey"
 And a file named "clickmonkey/features/example.feature" should exist
 
 Scenario: No argument to "squash"
 Given I'm in an empty directory
-When I run "bundle exec squash"
+When I run `bundle exec squash`
 Then the output should contain "Create a new empty application with: squash create <application_name>"
 
 Scenario: No argument to "squash create"
 Given I'm in an empty directory
-When I run "bundle exec squash create"
+When I run `bundle exec squash create`
 Then the output should contain "Create a new empty application with: squash create <application_name>"
 
 Scenario: More than two arguments to "squash create"
 Given I'm in an empty directory
-When I run "bundle exec squash create one two"
+When I run `bundle exec squash create one two`
 Then the output should contain "Create a new empty application with: squash create <application_name>"

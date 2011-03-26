@@ -1,4 +1,5 @@
 require 'akephalos'
+require 'capybara/dsl'
 
 Capybara.default_driver = :akephalos
 Capybara.run_server = false
