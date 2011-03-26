@@ -21,8 +21,8 @@ Gem::Specification.new do |s|
   #s.add_dependency  'bundler'
   
   s.add_dependency  'akephalos', '0.2.5'
-  s.add_dependency  'capybara', '0.4.1.2'
   s.add_dependency  'cucumber', '0.10.2'
+  s.add_dependency  'capybara', '0.4.1.2'
   s.add_dependency  'hirb', '0.4.0'
   s.add_dependency  'rake', '0.8.7'
   s.add_dependency  'rspec', '2.5.0'
