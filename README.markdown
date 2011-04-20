@@ -1,4 +1,4 @@
-# FreshSquash
+# Squash
 
 A clean Cucumber+Capybara+WebKit Squash that works out of the box. I'm trying to make this work on OS X, Linux and Windows.
 
@@ -10,12 +10,10 @@ It's a stand-alone Cucumber application. You can use it to test web applications
 
 Experimental. I'm testing it on various OSs.
 
-## Install a new fresh Squash
+## Install a fresh Squash
 
 Get the code via git:
-  git clone git://github.com/nusco/freshsquash.git
-
-Or download it as a [zip file](https://github.com/nusco/freshsquash/zipball/master).
+  git clone git://github.com/nusco/squash.git
 
 Install all the libraries you need:
   gem install bundler
