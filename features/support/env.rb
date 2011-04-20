@@ -1,8 +1,10 @@
 require 'rubygems'
 require 'bundler/setup'
 
-require 'aruba/cucumber'
+require 'capybara/cucumber'
 
-Before do
-  @aruba_timeout_seconds = 60
-end
+require File.expand_path(File.join(File.dirname(__FILE__), "paths"))
+
+require 'capybara-webkit'
+Capybara.default_driver = :webkit
+

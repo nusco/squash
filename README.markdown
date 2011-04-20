@@ -1,27 +1,39 @@
-# Squash
+# FreshSquash
 
-A generator of Cucumber applications
+A clean Cucumber+Capybara+WebKit Squash that works out of the box. I'm trying to make this work on OS X, Linux and Windows.
 
-## Description
+## A "Squash"? What the heck is that?
 
-This gem generates scaffolds for Cucumber web-oriented applications.
-
-I spent a huge amount of time building Cucumber-based stacks to test my web applications. There are so many options, and sometimes they don't really get together. Should I use Cucumber/RSpec/Webrat/Mechanize, Cucumber/RSpec/Capybara/Selenium, Cucumber/Watir, or what else? How do I solve all the version conflicts that seem to spring out of nowhere when I put these libraries together? How do I wire up all the pieces in a stand-alone, non-Rails application?
-
-Squash tries to save some time by generating a Cucumber-powered, Bundler-enabled web test application that is fully wired with the current popular favorite mix of gems: Cucumber, RSpec, Capybara and Akephalos. Once you've generated the Squash application, you can write your own features to 
+It's a stand-alone Cucumber application. You can use it to test web applications written in any language. See [TODO](http://TODO).
 
 ## Current status
 
-Experimental. This is just something that I'm trying out now for my own projects. At the moment, it should (might?) just give you an empty application with a working stack right now.
+Experimental. I'm testing it on various OSs.
+
+## Install a new fresh Squash
+
+Get the code via git:
+  git clone git://github.com/nusco/freshsquash.git
+
+Or download it as a [zip file](https://github.com/nusco/freshsquash/zipball/master).
+
+Install all the libraries you need:
+  gem install bundler
+  bundle install
+
+Install WebKit. I use Homebrew, so for me it's easy:
+  brew install qt
+  
+If you don't use Homebrew, download WebKit from http://www.webkit.org/.
 
 ## Squash it!
-
-    gem install squash
-    squash create my_app
-    cd my_app
+    
+Run the test feature:
     bundle exec cucumber
 
-Time to write your own features!
+If the feature doesn't complete without errors, please contact me with details at paolo dot nusco dot perrotta, on gmail.
+
+If this thing *does* work, then you can now browse around the folders and write your own features.
 
 ## Contribute
 

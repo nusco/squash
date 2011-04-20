@@ -4,8 +4,8 @@ module NavigationHelpers
     
     case page
 
-    when /Wikipedia/
-      'http://www.wikipedia.org/'
+    when /rubygems.org/
+      'http://www.rubygems.org'
 
   	else
       raise "Can't find mapping from \"#{page}\" to a path.\n" +

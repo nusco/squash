@@ -1,3 +1,2 @@
-squash-*.gem
+Gemfile.lock
 **/.DS_Store
-template/Gemfile.lock
