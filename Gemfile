@@ -1,6 +1,6 @@
 source :rubygems
 
-gem  'capybara-webkit', '0.1.7'
+gem  'capybara-webkit', '0.2.0'
 gem  'cucumber',        '0.10.2'
 gem  'capybara',        '0.4.1.2'
 gem  'rake',            '0.8.7'
