@@ -9,6 +9,7 @@ Get the skeleton Squash via git:
   git clone git://github.com/nusco/squash.git my_squash_folder
 
 Install the libraries:
+  cd my_squash_folder
   gem install bundler
   bundle install
 
