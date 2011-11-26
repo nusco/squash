@@ -7,4 +7,4 @@ Scenario: Test something AJAXy
   Given I am on rubygems.org
   When I fill in "query" with "sina"
   And I press "search_submit"
-  Then I should see "Classy web-development"
+  Then I should see "Sinatra is a DSL for quickly creating web applications"
