@@ -1,27 +1,20 @@
 # Squash
 
-A clean Cucumber+Capybara+WebKit Squash that works out of the box. I'm trying to make this work on OS X, Linux and Windows.
+A skeleton for a Cucumber+Capybara+WebKit Squash.
+A "Squash" is a stand-alone Cucumber application. You can use it to test web applications written in any language.
 
-## A "Squash"? What the heck is that?
+## Set-up
 
-It's a stand-alone Cucumber application. You can use it to test web applications written in any language. See [TODO](http://TODO).
+Get the skeleton Squash via git:
+  git clone git://github.com/nusco/squash.git my_squash_folder
 
-## Current status
-
-Experimental. I'm testing it on various OSs.
-
-## Install a fresh Squash
-
-Get the code via git:
-  git clone git://github.com/nusco/squash.git
-
-Install all the libraries you need:
+Install the libraries:
   gem install bundler
   bundle install
 
-Install WebKit. I use Homebrew, so for me it's easy:
+Install WebKit. I use Homebrew, so for me it's just one command (and a lot of patience):
   brew install qt
-  
+
 If you don't use Homebrew, download WebKit from http://www.webkit.org/.
 
 ## Squash it!
@@ -29,10 +22,4 @@ If you don't use Homebrew, download WebKit from http://www.webkit.org/.
 Run the test feature:
     bundle exec cucumber
 
-If the feature doesn't complete without errors, please contact me with details at paolo dot nusco dot perrotta, on gmail.
-
-If this thing *does* work, then you can now browse around the folders and write your own features.
-
-## Contribute
-
-* [http://github.com/nusco/squash](http://github.com/nusco/squash)
+Now you can remove the test feature and write your own features.
