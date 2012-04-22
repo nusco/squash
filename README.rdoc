@@ -1,5 +1,7 @@
 = Squash
 
+_NOTE: I made this when conflicts between Cucumber and other gems were still commonplace. These days, Cucumber and other libraries generally play well together. So you most likely don't need this skeleton - just use Cucumber with capybara-webkit, and everything should work out of the box. I'm keeping this project here "for historical reasons"._
+
 A skeleton for a Cucumber+Capybara+WebKit Squash.
 A "Squash" is a stand-alone Cucumber application. You can use it to test web applications written in any language.
 
